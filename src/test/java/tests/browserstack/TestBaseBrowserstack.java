@@ -1,4 +1,4 @@
-package tests;
+package tests.browserstack;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TestBase {
+public class TestBaseBrowserstack {
 
     @BeforeAll
     public static void setDriver(){

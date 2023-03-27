@@ -41,7 +41,8 @@ dependencies {
             "org.aeonbits.owner:owner:1.0.4",
             'org.junit.jupiter:junit-jupiter-api:5.9.2',
             'org.junit.jupiter:junit-jupiter-params:5.9.2',
-            'io.github.bonigarcia:webdrivermanager:5.2.1'
+            'io.github.bonigarcia:webdrivermanager:5.2.1',
+            'commons-io:commons-io:2.11.0'
     )
 }
 
@@ -66,5 +67,17 @@ task android(type: Test) {
 task ios(type: Test) {
     useJUnitPlatform {
         includeTags 'ios'
+    }
+}
+
+task emulator(type: Test) {
+    useJUnitPlatform {
+        includeTags 'emulator'
+    }
+}
+
+task real(type: Test) {
+    useJUnitPlatform {
+        includeTags 'real'
     }
 }
