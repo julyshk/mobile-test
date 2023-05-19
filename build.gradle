@@ -71,6 +71,12 @@ task android(type: Test) {
     }
 }
 
+task m_android(type: Test) {
+    useJUnitPlatform {
+        includeTags 'm_android'
+    }
+}
+
 task ios(type: Test) {
     useJUnitPlatform {
         includeTags 'ios'

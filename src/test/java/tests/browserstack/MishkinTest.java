@@ -30,7 +30,7 @@ public class MishkinTest extends TestBaseBrowserstack {
     }
 
     @Test
-    @Tag("android")
+    @Tag("m_android")
     @DisplayName("Выбор статьи на главном экране")
     void openArticle() {
         String text = "Amidst a political crisis in Ecuador, President Guillermo Lasso (pictured) dissolves the National Assembly and triggers an early general election.";
